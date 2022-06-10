@@ -1,6 +1,6 @@
 # from shodan import Shodan
 #
-# api = Shodan('dWqfrOP7Th0g1RUUz4ywBpxq9SpFdtUX')
+# api = Shodan('')
 #
 # # Lookup an IP
 # ipinfo = api.host('31.31.196.186')
@@ -19,7 +19,7 @@ import shodan
 import sys
 
 # Configuration
-API_KEY = "dWqfrOP7Th0g1RUUz4ywBpxq9SpFdtUX"
+API_KEY = ""
 
 # Input validation
 # if len(sys.argv) == 1:
