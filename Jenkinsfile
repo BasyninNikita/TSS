@@ -15,6 +15,7 @@ pipeline {
                 sh "sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*"
                 sh 'yum install epel-release -y'
                 sh 'yum install jq -y'
+                sh 'yum install python3-pipdeptree'
                 sh 'jq -Version'
             }
         }
