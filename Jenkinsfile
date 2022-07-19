@@ -29,7 +29,7 @@ pipeline {
                     LANGS = sh ( script: "curl -s https://api.github.com/repos/${env.GITHUB_REPOSITORY}/languages | jq 'keys'| tr -d '\n []'", returnStdout: true)
                     sh "echo ${LANGS}"
                 }
-                sh "python3 new/dependencies.py ${LANGS} > deps.txt"
+                sh "python3 new/dependencies ${LANGS} > deps.txt"
             }
             post {
                 always {
